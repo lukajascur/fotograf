@@ -147,3 +147,60 @@ a {
   height: 18px;
   display: block;
 }
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    gap: 15px;
+  }
+  .nav-links a {
+    font-size: 13px;
+  }
+  .logo img {
+    height: 45px;
+  }
+
+  /* Layout */
+  .about-container {
+    flex-direction: column;   /* slika gore, tekst dole */
+    height: auto;
+  }
+
+  .about-image {
+    flex: none;
+    height: 50vh;   /* pola ekrana zauzima slika */
+  }
+
+  .about-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Manji telefoni */
+@media (max-width: 480px) {
+  .about-image {
+    height: 40vh;
+  }
+  .about-text h1 {
+    font-size: 22px;
+  }
+  .about-text p {
+    font-size: 13px;
+  }
+}

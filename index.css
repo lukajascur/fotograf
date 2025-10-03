@@ -208,47 +208,28 @@ landing-block .image.right {
   }
 }
 
-/* Tableti i telefoni */
-@media (max-width: 1024px) {
-  .landing-block {
-    padding: 40px 20px;
-    gap: 20px;
-  }
-
-  .landing-block .text {
-    font-size: 60px; /* manji font ali ostaje pored slike */
-  }
-
-  .landing-block .image img {
-    max-width: 300px;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-
-  .logo img {
-    height: 45px;
-  }
-}
-
 /* Manji telefoni */
 @media (max-width: 600px) {
+  main {
+    gap: 40px; /* smanjen razmak između blokova */
+    padding: 40px 20px;
+  }
+
   .landing-block {
-    padding: 20px 10px;
-    gap: 10px;
+    flex-direction: column; /* tekst i slika idu jedan ispod drugog */
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
   }
 
   .landing-block .text {
-    font-size: 36px;
+    font-size: 28px;  /* dosta manji tekst */
+    text-align: center;
   }
 
   .landing-block .image img {
-    max-width: 200px;
+    max-width: 90%;  /* slika zauzima skoro celu širinu */
+    height: auto;
   }
 
   .nav-links {

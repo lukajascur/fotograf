@@ -195,4 +195,27 @@ body {
     margin: 0 auto;
     object-fit: contain;
   }
+  @media (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .logo {
+    position: static;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
 }

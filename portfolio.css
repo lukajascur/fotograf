@@ -163,3 +163,44 @@ body {
   display: block;
 }
 
+/* Responsive stilovi */
+@media (max-width: 768px) {
+  /* Navbar – isti kao na indexu */
+  .nav-links {
+    gap: 15px;
+  }
+  .nav-links a {
+    font-size: 13px;
+  }
+  .logo img {
+    height: 45px;
+  }
+
+  /* Tekst preko slika */
+  .fade-slideshow .overlay h1 {
+    font-size: 28px;   /* manji naslov */
+    margin-bottom: 10px;
+  }
+
+  .fade-slideshow .overlay p {
+    font-size: 14px;   /* manji paragraf */
+    line-height: 1.4;
+    padding: 0 10px;   /* da ne ide do kraja ekrana */
+  }
+}
+
+/* Još manji telefoni */
+@media (max-width: 480px) {
+  .fade-slideshow .overlay h1 {
+    font-size: 22px;
+  }
+  .fade-slideshow .overlay p {
+    font-size: 12px;
+  }
+  .logo img {
+    height: 40px;
+  }
+}
+
+
+
