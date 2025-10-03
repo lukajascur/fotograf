@@ -190,46 +190,51 @@ landing-block .image.right {
 /* Manji telefoni */
 @media (max-width: 600px) {
   main {
-    gap: 50px; /* manji razmak između blokova */
-    padding: 30px 15px;
+    gap: 30px; /* smanjen razmak između sekcija */
+    padding: 20px 10px;
   }
 
   .landing-block {
-    flex-direction: row; /* tekst levo, slika desno (ili obrnuto) */
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    padding: 30px 10px;
-    min-height: 80vh; /* zauzima većinu ekrana, ali nije predugačko */
+    gap: 20px;           /* veći razmak između teksta i slike */
+    padding: 20px 0;     /* manji padding da ne razvlači */
+    min-height: 70vh;    /* manje nego pre, ali i dalje dovoljno da se skroluje */
   }
 
   .landing-block .text {
-    font-size: 36px;  /* malo manji nego pre, da slika dobije više prostora */
+    font-size: 28px;  /* smanjen tekst */
     flex: 1;
     text-align: left;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 
   .landing-block .text.right {
     text-align: right;
   }
 
+  .landing-block .image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* slika skroz desno */
+  }
+
   .landing-block .image img {
-    max-width: 65%;   /* veća slika */
+    max-width: 80%;  /* veće slike */
     height: auto;
-    border-radius: 0; /* uklonjen zaobljeni ugao */
+    border-radius: 0; /* ostaje oštro */
   }
 
   .footer {
-    font-size: 13px;
-    padding: 30px 15px;
+    font-size: 12px;
+    padding: 20px 10px;
   }
 
   .footer .contact-button {
-    font-size: 13px;
-    padding: 8px 16px;
+    font-size: 12px;
+    padding: 8px 14px;
   }
-
 
   .navbar {
     justify-content: space-between;
