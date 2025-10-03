@@ -199,8 +199,8 @@ landing-block .image.right {
     justify-content: space-between;
     align-items: center;
     gap: 20px;           /* veći razmak između teksta i slike */
-    padding: 20px 0;     /* manji padding da ne razvlači */
-    min-height: 40vh;    /* manje nego pre, ali i dalje dovoljno da se skroluje */
+    padding: 10px 0;     /* manji padding da ne razvlači */
+    min-height: 20vh;    /* manje nego pre, ali i dalje dovoljno da se skroluje */
   }
 
   .landing-block .text {
@@ -221,7 +221,7 @@ landing-block .image.right {
   }
 
   .landing-block .image img {
-    max-width: 90%;  /* veće slike */
+    max-width: 100%;  /* veće slike */
     height: auto;
     border-radius: 0; /* ostaje oštro */
   }
