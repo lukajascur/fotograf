@@ -187,49 +187,43 @@ landing-block .image.right {
 }
 
 
-/* RESPONSIVE STILOVI */
-
-/* Tableti i manji laptopi */
-@media (max-width: 1024px) {
-  .landing-block {
-    padding: 40px 40px;
-  }
-
-  .landing-block .text {
-    font-size: 70px;
-  }
-
-  .nav-links {
-    gap: 25px;
-  }
-
-  .logo {
-    left: 20px;
-  }
-}
-
 /* Manji telefoni */
 @media (max-width: 600px) {
   main {
-    gap: 40px; /* smanjen razmak između blokova */
-    padding: 40px 20px;
+    gap: 20px;
+    padding: 20px;
   }
 
   .landing-block {
-    flex-direction: column; /* tekst i slika idu jedan ispod drugog */
+    flex-direction: row; /* ostaje tekst levo, slika desno */
+    justify-content: space-between;
     align-items: center;
+    gap: 10px;
     padding: 20px;
-    gap: 20px;
   }
 
   .landing-block .text {
-    font-size: 28px;  /* dosta manji tekst */
-    text-align: center;
+    font-size: 40px;  /* manji tekst da stane lepo */
+    flex: 1;          /* zauzima dostupni prostor */
+    text-align: left; /* ostaje levo kao na desktopu */
   }
 
   .landing-block .image img {
-    max-width: 90%;  /* slika zauzima skoro celu širinu */
+    max-width: 50%;   /* slika zauzima pola ekrana */
     height: auto;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .logo {
+    position: static;
+  }
+
+  .logo img {
+    height: 40px;
   }
 
   .nav-links {
@@ -238,10 +232,6 @@ landing-block .image.right {
 
   .nav-links a {
     font-size: 12px;
-  }
-
-  .logo img {
-    height: 40px;
   }
 
   .footer {

@@ -148,16 +148,28 @@ a {
   display: block;
 }
 
-@media (max-width: 768px) {
+/* Telefoni */
+@media (max-width: 600px) {
   /* Navbar */
+  .navbar {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .logo {
+    position: static; /* maknemo absolute da ne ide preko linkova */
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
   .nav-links {
     gap: 15px;
   }
+
   .nav-links a {
     font-size: 13px;
-  }
-  .logo img {
-    height: 45px;
   }
 
   /* Layout */
